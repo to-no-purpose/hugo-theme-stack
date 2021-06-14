@@ -277,24 +277,34 @@
         width: auto;
         border-collapse: collapse;
         border-spacing: 1;
-        border-color: 2px solid var(--table-border-color);
         margin-bottom: 1.5em;
         margin-left: 1.5em;
         font-size: 0.96em;
+        border-radius: var(--card-border-radius);
+        overflow: hidden;
+        background-color: var(--table-background-color);
     }
 
     th,
     td {
         text-align: left;
-        padding: 4px 8px 4px 10px;
+        padding: 4px 8px 4px 8px;
     }
 
     td {
         vertical-align: top;
     }
 
-    th {
-        background-color: var(--body-background);
+    th, {
+        border-bottom: 2px solid var(--th-border-color);
+        // border-top: 2px solid var(--th-border-color);
+        background-color: var(--th-background-color);
+
+    }
+
+    tr {
+        // border-bottom: 1px solid var(--table-border-color);
+        // border-top: 1px solid var(--table-border-color);
     }
 
     tr:nth-child(even) {

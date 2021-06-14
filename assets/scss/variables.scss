@@ -25,12 +25,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --main-top-padding: 50px;
     }
 
-    --body-background: #f5f5fa;
+    --body-background: #f5f9fa;
 
-    --accent-color: #34495e;
-    --accent-color-darker: #2c3e50;
-    --accent-color-text: #fff;
-    --body-text-color: #bababa;
+    --accent-color: #1e2f34;
+    --accent-color-darker: #32464c;
+    --accent-color-text: #1e2f34;
+    --body-text-color: #0f1a1d;
 
     --tag-border-radius: 4px;
 
@@ -38,10 +38,10 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     [data-scheme="dark"] {
         --body-background: #0f1a1d;
-        --accent-color: #e5e5e5; // need to change all these accent colors at some point!
-        --accent-color-darker: #d9d9d9;
+        --accent-color: #c8d8de; // need to change all these accent colors at some point!
+        --accent-color-darker: #abc2c9;
         --accent-color-text: #0f1a1d; // body background
-        --body-text-color: #f2f2f2; 
+        --body-text-color: #e6eff2; 
     }
 }
 
@@ -60,13 +60,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Card style
 */
 :root {
-    --card-background: #fff;
-    --card-background-selected: #eaeaea;
+    --card-background: #fcfeff;
+    --card-background-selected: #c8d8de;
 
-    --card-text-color-main: #000;
-    --card-text-color-secondary: #747474;
-    --card-text-color-tertiary: #bababa;
-    --card-separator-color: rgba(218, 218, 218, 0.5);
+    --card-text-color-main: #0f1a1d;
+    --card-text-color-secondary: #1e2f34;
+    --card-text-color-tertiary: #32464c;
+    --card-separator-color: #0f1a1d;
 
     --card-border-radius: 10px;
 
@@ -86,10 +86,10 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     [data-scheme="dark"] {
         --card-background: #1e2f34;
         --card-background-selected: #32464c;
-        --card-text-color-main: #f2f2f2;
-        --card-text-color-secondary: #e5e5e5;
-        --card-text-color-tertiary: #d9d9d9;
-        --card-separator-color: #f2f2f2;
+        --card-text-color-main: #e6eff2;
+        --card-text-color-secondary: #c8d8de;
+        --card-text-color-tertiary: #abc2c9;
+        --card-separator-color: #e6eff2;
     }
 }
 
@@ -110,7 +110,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --blockquote-border-size: 4px;
-    --blockquote-background-color: rgb(248 248 248);
+    --blockquote-background-color: #e6eff2;
 
     --heading-border-size: 4px;
 
@@ -121,18 +121,21 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --pre-background-color: #272822;
     --pre-text-color: #f8f8f2;
 
-    --code-background-color: rgba(0, 0, 0, 0.12);
-    --code-text-color: #808080;
+    --code-background-color: #e6eff2;
+    --code-text-color: #1e2f34;
 
     --table-border-color: #dadada;
     --tr-even-background-color: #efefee;
 
     [data-scheme="dark"] {
         --code-background-color: #32464c;
-        --code-text-color: #f2f2f2;
+        --code-text-color: #c8d8de;
 
-        --table-border-color: #0f1a1d;
+        --th-border-color: #be6078;
+        --table-border-color: #abc2c9;
         --tr-even-background-color: #32464c;
+        --th-background-color: #32464c;
+        --table-background-color: #1e2f34;
 
         --blockquote-background-color: #32464c;
     }
@@ -155,14 +158,17 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 
 :root {
-    --accent-cyan-one: #92f2d7; // bright
-    --accent-cyan-two: #61bfa7; // dark
+    --accent-cyan-one: #61bfa7; // dark
+    --accent-cyan-two: #92f2d7; // bright
 
-    --accent-pink-one: #f191ac;
-    --accent-pink-two: #be6078;
+    --accent-pink-one: #be6078;
+    --accent-pink-two: #f191ac;
 
-    --accent-blue-one: #91daf2;
-    --accent-blue-two: #91daf2;
+    --accent-purple-one: #7660BF;
+    --accent-purple-two: #A891F2;
+
+    --accent-blue-one: #60A7BF;
+    --acceny-blue-two: #91DAF2;
 
     [data-scheme="dark"] {
     --accent-cyan-one: #92f2d7; // bright
@@ -171,7 +177,11 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --accent-pink-one: #f191ac;
     --accent-pink-two: #be6078;
 
-    --accent-blue-one: #91daf2;
-    --accent-blue-two: #91daf2;
+    --accent-purple-one: #A891F2;
+    --accent-purple-two: #7660BF;
+
+    --accent-blue-one: #91DAF2;
+    --accent-blue-two: #60A7BF;
+
     }
 }
