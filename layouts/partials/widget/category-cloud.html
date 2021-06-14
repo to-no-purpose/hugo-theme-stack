@@ -1,0 +1,11 @@
+<section class="widget categoryCloud">
+  <h2 class="widget-title section-title"> <span class="widget-icon"> {{ partial "helper/icon" "categories" }} </span> {{ T "widget.categoriesCloud.title" }}</h2>
+
+  <div class="categoryCloud-tags">
+      {{ range first .Site.Params.widgets.categoriesCloud.limit .Site.Taxonomies.categories.ByCount }}
+          <a href="{{ .Page.RelPermalink }}" class="font_size_{{ .Count }}" >
+              {{ .Page.Title }} &nbsp; <span class="pill_count"> {{ .Count }} </span>
+          </a>
+      {{ end }}
+  </div>
+</section>
