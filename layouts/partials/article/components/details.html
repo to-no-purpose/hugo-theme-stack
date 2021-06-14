@@ -1,13 +1,4 @@
 <div class="article-details">
-    {{ if .Params.categories }}
-    <header class="article-category">
-        {{ range (.GetTerms "categories") }}
-            <a href="{{ .RelPermalink }}" {{ with .Params.style }}style="background-color: {{ .background }}; color: {{ .color }};"{{ end }}>
-                {{ .LinkTitle }}
-            </a>
-        {{ end }}
-    </header>
-    {{ end }}
 
     <h2 class="article-title">
         <a href="{{ .RelPermalink }}">
@@ -28,5 +19,26 @@
             {{- .Date.Format (or .Site.Params.dateFormat.published "Jan 02, 2006") -}}
         </time>
     </footer>
+
+    {{ if .Params.categories }}
+    <footer class="article-category">
+    {{ partial "helper/icon" "categories" }}
+    {{ range (.GetTerms "categories") }}
+        <a href="{{ .RelPermalink }}">
+        {{ .LinkTitle }}
+        </a>
+        {{ end }}
+    </footer>
+    {{ end }}
+
+    {{ if .Params.Tags }}
+        <footer class="article-tags">
+        {{ partial "helper/icon" "tag" }}
+        {{ range (.GetTerms "tags") }}
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{ end }}
+        </footer>
+    {{ end }}
+
     {{- end -}}
 </div>
