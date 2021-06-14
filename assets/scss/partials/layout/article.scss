@@ -202,7 +202,7 @@
     h6 {
         margin-left: calc((var(--card-padding)) * -1);
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size) solid var(--accent-color);
+        border-left: var(--heading-border-size) solid var(--accent-pink-one);
     }
 
     figure {
@@ -217,7 +217,7 @@
     blockquote {
         position: relative;
         margin: 1.5em 0;
-        border-left: var(--blockquote-border-size) solid var(--card-separator-color);
+        border-left: var(--blockquote-border-size) solid var(--accent-cyan-one);
         padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
         background-color: var(--blockquote-background-color);
     }
@@ -225,10 +225,10 @@
     hr {
         width: 100px;
         margin: 40px auto;
-        background: var(--card-text-color-tertiary);
+        background: var(--accent-cyan-two);
         height: 2px;
         border: 0;
-        opacity: 0.55;
+        opacity: 1;
     }
 
     code {
@@ -274,10 +274,12 @@
     }
 
     table {
-        width: 100%;
+        width: auto;
         border-collapse: collapse;
-        border-spacing: 0;
+        border-spacing: 1;
+        border-color: 2px solid var(--table-border-color);
         margin-bottom: 1.5em;
+        margin-left: 1.5em;
         font-size: 0.96em;
     }
 
@@ -285,11 +287,14 @@
     td {
         text-align: left;
         padding: 4px 8px 4px 10px;
-        border: 1px solid var(--table-border-color);
     }
 
     td {
         vertical-align: top;
+    }
+
+    th {
+        background-color: var(--body-background);
     }
 
     tr:nth-child(even) {

@@ -37,14 +37,6 @@
             }
         }
 
-        @for $i from 1 through length($defaultTagBackgrounds) {
-            &:nth-child(#{length($defaultTagBackgrounds)}n + #{$i}) {
-                .article-category a {
-                    background: nth($defaultTagBackgrounds, $i);
-                    color: nth($defaultTagColors, $i);
-                }
-            }
-        }
     }
 }
 
@@ -110,25 +102,69 @@
     }
 }
 
-.article-category,
-.article-tags {
+.article-category {
+    margin-top: 10px;
+    color: var(--card-text-color-tertiary);
+    display: flex;
+    flex-wrap: wrap;
+
+    svg {
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.33;
+    color: var(--card-text-color-tertiary);
+    }
+
     a {
-        color: var(--accent-color-text);
-        background-color: var(--accent-color);
-        padding: 8px 16px;
+        color: var(--body-background);
+        background-color: var(--accent-pink-one);
+        padding: 4px 4px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
         font-size: 1.4rem;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        margin-right: 5px;
         transition: background-color 0.5s ease;
 
         &:hover {
-            color: var(--accent-color-text);
-            background-color: var(--accent-color-darker);
+                color: var(--body-background);
+                background-color: var(--accent-pink-two);
         }
     }
 }
+
+.article-tags {
+    margin-top: 10px;
+    color: var(--card-text-color-tertiary);
+    display: flex;
+
+    svg {
+    vertical-align: middle;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.33;
+    color: var(--card-text-color-tertiary);
+    }
+
+    a {
+        color: var(--body-background);
+        background-color: var(--accent-cyan-one);
+        padding: 4px 4px;
+        border-radius: var(--tag-border-radius);
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-right: 5px;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+                color: var(--body-background);
+                background-color: var(--accent-cyan-two);
+        }
+    }
+}
+
 
 /* Compact style article list */
 .article-list--compact {
