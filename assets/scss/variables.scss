@@ -8,8 +8,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 }
 
 [data-scheme="dark"] {
-    --pre-text-color: #f8f8f2;
-    --pre-background-color: #272822;
+    --pre-text-color: #d9d9d9;
+    --pre-background-color: #32464c;
     @import "partials/highlight/dark.scss";
 }
 
@@ -36,17 +36,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --section-separation: 40px;
 
-    --scrollbar-thumb: hsl(0, 0%, 85%);
-    --scrollbar-track: var(--body-background);
-
     [data-scheme="dark"] {
-        --body-background: #303030;
-        --accent-color: #ecf0f1;
-        --accent-color-darker: #bdc3c7;
-        --accent-color-text: #000;
-        --body-text-color: rgba(255, 255, 255, 0.7);
-        --scrollbar-thumb: #424242;
-        --scrollbar-track: var(--body-background);
+        --body-background: #0f1a1d;
+        --accent-color: #e5e5e5; // need to change all these accent colors at some point!
+        --accent-color-darker: #d9d9d9;
+        --accent-color-text: #0f1a1d; // body background
+        --body-text-color: #f2f2f2; 
     }
 }
 
@@ -89,12 +84,12 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     }
 
     [data-scheme="dark"] {
-        --card-background: #424242;
-        --card-background-selected: rgba(255, 255, 255, 0.16);
-        --card-text-color-main: rgba(255, 255, 255, 0.9);
-        --card-text-color-secondary: rgba(255, 255, 255, 0.7);
-        --card-text-color-tertiary: rgba(255, 255, 255, 0.5);
-        --card-separator-color: rgba(255, 255, 255, 0.12);
+        --card-background: #1e2f34;
+        --card-background-selected: #32464c;
+        --card-text-color-main: #f2f2f2;
+        --card-text-color-secondary: #e5e5e5;
+        --card-text-color-tertiary: #d9d9d9;
+        --card-separator-color: #f2f2f2;
     }
 }
 
@@ -133,13 +128,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --tr-even-background-color: #efefee;
 
     [data-scheme="dark"] {
-        --code-background-color: #272822;
-        --code-text-color: rgba(255, 255, 255, 0.9);
+        --code-background-color: #32464c;
+        --code-text-color: #f2f2f2;
 
-        --table-border-color: #717171;
-        --tr-even-background-color: #545454;
+        --table-border-color: #0f1a1d;
+        --tr-even-background-color: #32464c;
 
-        --blockquote-background-color: rgb(75 75 75);
+        --blockquote-background-color: #32464c;
     }
 }
 
@@ -153,4 +148,30 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+/*
+*   Additional accent colors
+*/
+
+:root {
+    --accent-cyan-one: #92f2d7; // bright
+    --accent-cyan-two: #61bfa7; // dark
+
+    --accent-pink-one: #f191ac;
+    --accent-pink-two: #be6078;
+
+    --accent-blue-one: #91daf2;
+    --accent-blue-two: #91daf2;
+
+    [data-scheme="dark"] {
+    --accent-cyan-one: #92f2d7; // bright
+    --accent-cyan-two: #61bfa7; // dark
+
+    --accent-pink-one: #f191ac;
+    --accent-pink-two: #be6078;
+
+    --accent-blue-one: #91daf2;
+    --accent-blue-two: #91daf2;
+    }
 }
