@@ -1,6 +1,8 @@
 $defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
 $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
+// think this shit is for code but idk tbh. test later
+
 [data-scheme="light"] {
     --pre-text-color: #272822;
     --pre-background-color: #fafafa;
@@ -25,23 +27,59 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --main-top-padding: 50px;
     }
 
-    --body-background: #f5f9fa;
-
-    --accent-color: #1e2f34;
-    --accent-color-darker: #32464c;
-    --accent-color-text: #1e2f34;
-    --body-text-color: #0f1a1d;
-
     --tag-border-radius: 4px;
-
     --section-separation: 40px;
 
+
+    // LIGHT MODE
+
+    // background colors
+    --color-bg-one: #E1F3FA;   // darkest
+    --color-bg-two: #F0FBFE;   // to
+    --color-bg-three: #FAFEFF; // lightest
+
+    // text colors
+    --color-txt-one: #0F1F24; // dark - same as darkmode --color-bg-one
+    --color-txt-two: #192E34; // lighter - same as darkmode --color-bg-two
+    --color-txt-inv: #E1F3FA; // lightest - same as --color-bg-one
+
+    // cyan accent colors
+    --color-cyan-one: #81F3D3; // light
+    --color-cyan-two: #34A88A; // dark
+
+    // pink accent colors
+    --color-pink-one: #F381A1; // light
+    --color-pink-two: #A83454; // dark
+
+    // orange accent colors
+    --color-orange-one: #FAB67A; // light
+    --color-orange-two: #B36928; // dark
+
     [data-scheme="dark"] {
-        --body-background: #0f1a1d;
-        --accent-color: #c8d8de; // need to change all these accent colors at some point!
-        --accent-color-darker: #abc2c9;
-        --accent-color-text: #0f1a1d; // body background
-        --body-text-color: #e6eff2; 
+
+        // DARK MODE
+
+        // background colors
+        --color-bg-one: #0F1F24;   // darkest
+        --color-bg-two: #192E34;   // to
+        --color-bg-three: #243B42; // lightest
+
+        // text colors
+        --color-txt-one: #DBF7FF; // light
+        --color-txt-two: #A0D9EE; // dark
+        --color-txt-inv: #0F1F24; // darkest - same as --color-bg-one
+
+        // cyan accent colors
+        --color-cyan-one: #34A88A; // dark
+        --color-cyan-two: #81F3D3; // light
+
+        // pink accent colors
+        --color-pink-one: #A83454; // dark
+        --color-pink-two: #F381A1; // light
+    
+        // orange accent colors
+        --color-orange-one: #B36928; // dark
+        --color-orange-two: #FAB67A; // light
     }
 }
 
@@ -60,13 +98,6 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Card style
 */
 :root {
-    --card-background: #fcfeff;
-    --card-background-selected: #c8d8de;
-
-    --card-text-color-main: #0f1a1d;
-    --card-text-color-secondary: #1e2f34;
-    --card-text-color-tertiary: #32464c;
-    --card-separator-color: #0f1a1d;
 
     --card-border-radius: 10px;
 
@@ -83,14 +114,6 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --small-card-padding: 25px 20px;
     }
 
-    [data-scheme="dark"] {
-        --card-background: #1e2f34;
-        --card-background-selected: #32464c;
-        --card-text-color-main: #e6eff2;
-        --card-text-color-secondary: #c8d8de;
-        --card-text-color-tertiary: #abc2c9;
-        --card-separator-color: #e6eff2;
-    }
 }
 
 /**
@@ -110,35 +133,15 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --blockquote-border-size: 4px;
-    --blockquote-background-color: #e6eff2;
 
     --heading-border-size: 4px;
 
-    --link-background-color: 189, 195, 199;
+    --link-background-color: 189, 195, 199; // altering this broke the link styling somehow when i did it before
     --link-background-opacity: 0.5;
     --link-background-opacity-hover: 0.7;
 
-    --pre-background-color: #272822;
-    --pre-text-color: #f8f8f2;
-
-    --code-background-color: #e6eff2;
-    --code-text-color: #1e2f34;
-
-    --table-border-color: #dadada;
-    --tr-even-background-color: #efefee;
-
-    [data-scheme="dark"] {
-        --code-background-color: #32464c;
-        --code-text-color: #c8d8de;
-
-        --th-border-color: #be6078;
-        --table-border-color: #abc2c9;
-        --tr-even-background-color: #32464c;
-        --th-background-color: #32464c;
-        --table-background-color: #1e2f34;
-
-        --blockquote-background-color: #32464c;
-    }
+    --pre-background-color: #272822; // not sure what these are
+    --pre-text-color: #f8f8f2; // -----------------------
 }
 
 /*
@@ -151,37 +154,4 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
         0px 0px 1px rgba(0, 0, 0, 0.04);
-}
-
-/*
-*   Additional accent colors
-*/
-
-:root {
-    --accent-cyan-one: #61bfa7; // dark
-    --accent-cyan-two: #92f2d7; // bright
-
-    --accent-pink-one: #be6078;
-    --accent-pink-two: #f191ac;
-
-    --accent-purple-one: #7660BF;
-    --accent-purple-two: #A891F2;
-
-    --accent-blue-one: #60A7BF;
-    --acceny-blue-two: #91DAF2;
-
-    [data-scheme="dark"] {
-    --accent-cyan-one: #92f2d7; // bright
-    --accent-cyan-two: #61bfa7; // dark
-
-    --accent-pink-one: #f191ac;
-    --accent-pink-two: #be6078;
-
-    --accent-purple-one: #A891F2;
-    --accent-purple-two: #7660BF;
-
-    --accent-blue-one: #91DAF2;
-    --accent-blue-two: #60A7BF;
-
-    }
 }
