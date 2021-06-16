@@ -202,7 +202,12 @@
     h6 {
         margin-left: calc((var(--card-padding)) * -1);
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size) solid var(--color-pink-one);
+        border-left: var(--heading-border-size) solid var(--color-orange-one);
+    }
+
+    h1 {
+        border-left: var(--heading-border-size) solid var(--color-orange-two);
+
     }
 
     figure {
@@ -280,7 +285,7 @@
         margin-bottom: 1.5em;
         margin-left: 1.5em;
         font-size: 0.96em;
-        border-radius: var(--card-border-radius);
+        border-radius: var(--tag-border-radius);
         overflow: hidden;
         background-color: var(--color-bg-two);
     }
