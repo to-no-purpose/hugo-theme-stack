@@ -51,7 +51,7 @@
 .hamburger-inner::after {
     width: 30px;
     height: 2px;
-    background-color: var(--card-text-color-main);
+    background-color: var(--color-bg-two);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -115,7 +115,7 @@
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: var(--accent-color);
+            background-color: var(--color-txt-two);
         }
     }
 }
@@ -137,7 +137,7 @@
     }
 
     @media (max-width: $on-phone) {
-        background-color: var(--card-background);
+        background-color: var(--color-bg-two);
         margin-top: 0;
         padding: 15px 0;
         box-shadow: var(--shadow-l1);
@@ -193,7 +193,7 @@
             height: 100%;
             display: inline-flex;
             align-items: center;
-            color: var(--body-text-color);
+            color: var(--color-txt-one);
 
             @media (max-width: $on-desktop-large) {
                 font-size: 1.4rem;
@@ -206,7 +206,7 @@
 
         &.current {
             a {
-                color: var(--accent-color);
+                color: var(--color-txt-two);
                 font-weight: bold;
             }
         }

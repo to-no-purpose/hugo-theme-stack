@@ -1,6 +1,6 @@
 .pagination {
     display: flex;
-    background-color: var(--card-background);
+    background-color: var(--color-bg-two);
     box-shadow: var(--shadow-l1);
     border-radius: var(--card-border-radius);
     overflow: hidden;
@@ -13,10 +13,10 @@
 
         &.current {
             font-weight: bold;
-            background-color: var(--card-background-selected);
-            color: var(--card-text-color-main);
+            background-color: var(--color-bg-three);
+            color: var(--color-bg-two);
         }
 
-        color: var(--card-text-color-secondary);
+        color: var(--color-txt-two);
     }
 }

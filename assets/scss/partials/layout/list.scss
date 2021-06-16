@@ -1,6 +1,6 @@
 .section-card {
     border-radius: var(--card-border-radius);
-    background-color: var(--card-background);
+    background-color: var(--color-bg-two);
     padding: var(--small-card-padding);
     box-shadow: var(--shadow-l1);
     margin-bottom: var(--section-separation);
@@ -13,7 +13,7 @@
         font-size: 2.2rem;
         margin: 0;
         margin-top: calc(var(--separation) / 2);
-        color: var(--card-text-color-main);
+        color: var(--color-txt-one);
 
         & + .section-description {
             margin-top: var(--separation);
@@ -22,7 +22,7 @@
 
     .section-description {
         font-weight: normal;
-        color: var(--card-text-color-secondary);
+        color: var(--color-txt-two);
         font-size: 1.6rem;
         margin: 0;
     }
@@ -40,7 +40,7 @@
     }
 
     .section-count {
-        color: var(--card-text-color-tertiary);
+        color: var(--color-txt-two);
         font-size: 1.4rem;
         margin: 0;
         font-weight: bold;

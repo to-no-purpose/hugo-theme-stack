@@ -27,15 +27,15 @@
         top: 15px;
         left: 20px;
         font-size: 1.4rem;
-        color: var(--card-text-color-tertiary);
+        color: var(--color-txt-two);
     }
 
     input {
         padding: 40px 20px 20px;
         border-radius: var(--card-border-radius);
-        background-color: var(--card-background);
+        background-color: var(--color-bg-two);
         box-shadow: var(--shadow-l1);
-        color: var(--card-text-color-main);
+        color: var(--color-txt-one);
         width: 100%;
         border: 0;
         -webkit-appearance: none;
@@ -67,12 +67,12 @@
 
             svg {
                 stroke-width: 2;
-                color: var(--accent-color);
+                color: var(--color-txt-two);
             }
         }
 
         svg {
-            color: var(--card-text-color-secondary);
+            color: var(--color-txt-two);
             stroke-width: 1.33;
             transition: all 0.3s ease;
             width: 20px;

@@ -4,9 +4,51 @@
             width: 25px;
             height: 25px;
             stroke-width: 1.33;
-            color: var(--body-text-color);
+            color: var(--color-txt-two);
             vertical-align: middle;
         }
+    }
+}
+
+
+/* Category cloud widget */
+.categoryCloud {
+    .categoryCloud-tags {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            background: var(--color-pink-one);
+            box-shadow: var(--shadow-l1);
+            border-radius: var(--tag-border-radius);
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 4px;
+            padding-right: 4px;
+
+            color: var(--color-bg-one);
+            margin-bottom: 10px;
+            margin-right: 5px;
+            font-size: 1.4rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                box-shadow: var(--shadow-l2);
+                color: var(--color-pink-two);
+            }
+        }
+    }
+    .pill_count { // not currently in use
+        background: var(--color-pink-two);
+        border-top-right-radius: var(--tag-border-radius);
+        border-bottom-right-radius: var(--tag-border-radius);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;  
+        padding-top: 4px;
+        padding-bottom: 3px;
+        padding-left: 4px;
+        padding-right: 4px;
+        color: var(--color-txt-inv);
     }
 }
 
@@ -17,93 +59,52 @@
         flex-wrap: wrap;
 
         a {
-            background: var(--accent-cyan-one);
+            background: var(--color-cyan-one);
             box-shadow: var(--shadow-l1);
             border-radius: var(--tag-border-radius);
             padding-top: 4px;
             padding-bottom: 4px;
             padding-left: 4px;
-            padding-right: 0px;
+            padding-right: 4px;
 
-            color: var(--body-background);
+            color: var(--color-bg-one);
             margin-bottom: 10px;
             margin-right: 5px;
             font-size: 1.4rem;
-            transition: box-shadow 0.3s ease;
+            transition: all 0.3s ease;
 
             &:hover {
                 box-shadow: var(--shadow-l2);
+                color: var(--color-cyan-two);
             }
         }
     }
     .pill_count {
-        background: var(--accent-cyan-two);
+        background: var(--color-cyan-two);
         border-top-right-radius: var(--tag-border-radius);
         border-bottom-right-radius: var(--tag-border-radius);
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;  
-        padding-top: 4px;
-        padding-bottom: 3px;
-        padding-left: 4px;
+        padding-top: 2px;
+        padding-bottom: 1px;
+        padding-left: 2px;
         padding-right: 4px;
-        color: var(--body-background);
+        color: var(--color-bg-one);
     }
 }
 
-
-
-
-/* Category cloud widget */
-.categoryCloud {
-    .categoryCloud-tags {
-        display: flex;
-        flex-wrap: wrap;
-
-        a {
-            background: var(--accent-pink-one);
-            box-shadow: var(--shadow-l1);
-            border-radius: var(--tag-border-radius);
-            padding-top: 4px;
-            padding-bottom: 4px;
-            padding-left: 4px;
-            padding-right: 0px;
-
-            color: var(--body-background);
-            margin-bottom: 10px;
-            margin-right: 5px;
-            font-size: 1.4rem;
-            transition: box-shadow 0.3s ease;
-
-            &:hover {
-                box-shadow: var(--shadow-l2);
-            }
-        }
-    }
-    .pill_count {
-        background: var(--accent-pink-two);
-        border-top-right-radius: var(--tag-border-radius);
-        border-bottom-right-radius: var(--tag-border-radius);
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;  
-        padding-top: 4px;
-        padding-bottom: 3px;
-        padding-left: 4px;
-        padding-right: 4px;
-        color: var(--body-background);
-    }
-}
 
 /* Archives widget */
 .widget.archives {
     .widget-archive--list {
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
-        background-color: var(--card-background);
+        background-color: var(--color-bg-two);
     }
 
     .archives-year {
         &:not(:last-of-type) {
-            border-bottom: 1.5px solid var(--card-separator-color);
+            border-bottom: 1.5px solid var(--color-bg-three); // this could be fucked up idk
         }
 
         a {
@@ -113,12 +114,12 @@
 
             span.year {
                 flex: 1;
-                color: var(--card-text-color-main);
+                color: var(--color-txt-one);
                 font-weight: bold;
             }
 
             span.count {
-                color: var(--card-text-color-tertiary);
+                color: var(--color-txt-two);
             }
         }
     }

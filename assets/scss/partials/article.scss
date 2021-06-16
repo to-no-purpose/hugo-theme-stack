@@ -6,7 +6,7 @@
     article {
         display: flex;
         flex-direction: column;
-        background-color: var(--card-background);
+        background-color: var(--color-bg-two);
         box-shadow: var(--shadow-l1);
         border-radius: var(--card-border-radius);
         overflow: hidden;
@@ -51,7 +51,7 @@
 .article-title {
     font-weight: 600;
     margin: 10px 0;
-    color: var(--card-text-color-main);
+    color: var(--color-txt-one);
 
 
     @media (min-width: $on-desktop-large) {
@@ -66,7 +66,7 @@
 
 .article-subtitle {
     font-weight: normal;
-    color: var(--card-text-color-secondary);
+    color: var(--color-txt-two);
     margin: 5px 0;
     line-height: 1.5;
 
@@ -79,7 +79,7 @@
 .article-time {
     display: flex;
     align-items: center;
-    color: var(--card-text-color-tertiary);
+    color: var(--color-txt-two);
     margin-top: 10px;
 
     svg {
@@ -97,7 +97,7 @@
 
 .article-category {
     margin-top: 10px;
-    color: var(--card-text-color-tertiary);
+    color: var(--color-txt-two);
     display: flex;
     flex-wrap: wrap;
 
@@ -107,30 +107,32 @@
     width: 20px;
     height: 20px;
     stroke-width: 1.33;
-    color: var(--card-text-color-tertiary);
+    color: var(--color-txt-two);
     }
 
-    a {
-        color: var(--body-background);
-        background-color: var(--accent-pink-one);
+    a { // tag pill
+        color: var(--color-bg-one);
+        background-color: var(--color-pink-one);
         padding: 4px 4px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
         font-size: 1.4rem;
+        // font-weight: ; might be worht adjusting w new font
         margin-right: 5px;
-        transition: background-color 0.5s ease;
+        transition: all 0.3s ease;
 
         &:hover {
-                color: var(--body-background);
-                background-color: var(--accent-pink-two);
-        }
+                box-shadow: var(--shadow-l2);
+                color: var(--color-pink-two);
+            }
     }
 }
 
 .article-tags {
     margin-top: 10px;
-    color: var(--card-text-color-tertiary);
+    color: var(--color-txt-two);
     display: flex;
+    flex-wrap: wrap;
 
     svg {
     vertical-align: middle;
@@ -138,22 +140,22 @@
     width: 20px;
     height: 20px;
     stroke-width: 1.33;
-    color: var(--card-text-color-tertiary);
+    color: var(--color-txt-two);
     }
 
-    a {
-        color: var(--body-background);
-        background-color: var(--accent-cyan-one);
+    a { // tag pill
+        color: var(--color-bg-one);
+        background-color: var(--color-cyan-one);
         padding: 4px 4px;
         border-radius: var(--tag-border-radius);
         display: inline-block;
         font-size: 1.4rem;
         margin-right: 5px;
-        transition: background-color 0.5s ease;
+        transition: all 0.3s ease;
 
         &:hover {
-                color: var(--body-background);
-                background-color: var(--accent-cyan-two);
+                box-shadow: var(--shadow-l2);
+                color: var(--color-cyan-two);
         }
     }
 }
@@ -163,7 +165,7 @@
 .article-list--compact {
     border-radius: var(--card-border-radius);
     box-shadow: var(--shadow-l1);
-    background-color: var(--card-background);
+    background-color: var(--color-bg-two);
     --image-size: 60px;
 
     @media (max-width: $on-tablet) {
@@ -182,7 +184,7 @@
         }
 
         &:not(:last-of-type) {
-            border-bottom: 3px solid var(--body-background);
+            border-bottom: 3px solid var(--color-bg-one);
         }
 
         .article-details {
@@ -215,7 +217,7 @@
 
         .article-preview {
             font-size: 1.4rem;
-            color: var(--card-text-color-tertiary);
+            color: var(--color-txt-two);
             margin-top: 10px;
             line-height: 1.5;
         }
@@ -232,7 +234,7 @@
         width: 250px;
         box-shadow: var(--shadow-l1);
         transition: box-shadow 0.3s ease;
-        background-color: var(--card-background);
+        background-color: var(--color-bg-two);
 
         &:hover {
             box-shadow: var(--shadow-l2);
@@ -244,7 +246,7 @@
             }
 
             .article-title {
-                color: #fff;
+                color: var(--color-txt-one); // this was #fff originally, not sure why
             }
         }
 
@@ -281,7 +283,7 @@
         .article-title {
             font-size: 2.2rem;
             font-weight: 500;
-            color: var(--card-text-color-main);
+            color: var(--color-txt-one);
 
             @media (max-width: $on-phone) {
                 font-size: 2rem;

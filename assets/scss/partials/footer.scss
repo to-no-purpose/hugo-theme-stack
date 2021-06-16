@@ -9,23 +9,23 @@ footer.site-footer {
         display: block;
         height: 3px;
         width: 50px;
-        background: var(--body-text-color);
+        background: var(--color-txt-one);
         margin-bottom: 20px;
     }
 
     .copyright {
-        color: var(--accent-color);
+        color: var(--color-txt-two);
         font-weight: bold;
         margin-bottom: 5px;
     }
 
     .powerby {
-        color: var(--body-text-color);
+        color: var(--color-txt-two);
         font-weight: normal;
         font-size: 1.2rem;
 
         a {
-            color: var(--body-text-color);
+            color: var(--color-txt-one);
         }
     }
 }

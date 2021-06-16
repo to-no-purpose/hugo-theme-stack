@@ -29,18 +29,17 @@
 
 a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--color-cyan-one);
+    transition: color .3s ease;
 
     &:hover {
-        color: var(--accent-color-darker);
+        color: var(--color-cyan-two);
     }
 
-    &.link {
-        box-shadow: 0px -2px 0px rgba(var(--link-background-color), var(--link-background-opacity)) inset;
-        transition: all 0.3s ease;
+    &.link { // used to contain those weird expanding link underlines
 
         &:hover {
-            box-shadow: 0px -10px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset;
+
         }
     }
 }
@@ -52,9 +51,9 @@ a {
     display: block;
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(--body-text-color);
+    color: var(--color-txt-one);
 
     a {
-        color: var(--body-text-color);
+        color: var(--color-txt-one);
     }
 }

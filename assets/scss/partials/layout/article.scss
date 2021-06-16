@@ -42,7 +42,7 @@
     }
 
     .main-article {
-        background: var(--card-background);
+        background: var(--color-bg-two);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         overflow: hidden;
@@ -69,7 +69,7 @@
 
         .article-content {
             margin: var(--card-padding) 0;
-            color: var(--card-text-color-main);
+            color: var(--color-txt-one);
 
             img {
                 max-width: 100%;
@@ -86,7 +86,7 @@
             }
 
             section {
-                color: var(--card-text-color-tertiary);
+                color: var(--color-txt-two);
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
@@ -121,9 +121,9 @@
     }
 
     .back-home {
-        background: var(--card-background);
+        background: var(--color-bg-two);
         border-radius: var(--tag-border-radius);
-        color: var(--card-text-color-tertiary);
+        color: var(--color-txt-two);
         margin-right: 30px;
         display: inline-flex;
         align-items: center;
@@ -202,7 +202,7 @@
     h6 {
         margin-left: calc((var(--card-padding)) * -1);
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size) solid var(--accent-pink-one);
+        border-left: var(--heading-border-size) solid var(--color-pink-one);
     }
 
     figure {
@@ -210,30 +210,30 @@
 
         figcaption {
             font-size: 1.4rem;
-            color: var(--card-text-color-secondary);
+            color: var(--color-txt-two);
         }
     }
 
     blockquote {
         position: relative;
         margin: 1.5em 0;
-        border-left: var(--blockquote-border-size) solid var(--accent-cyan-one);
+        border-left: var(--blockquote-border-size) solid var(--color-orange-one);
         padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
-        background-color: var(--blockquote-background-color);
+        background-color: var(--color-bg-three);
     }
 
     hr {
         width: 100px;
         margin: 40px auto;
-        background: var(--accent-cyan-two);
+        background: var(--color-txt-two);
         height: 2px;
         border: 0;
         opacity: 1;
     }
 
     code {
-        color: var(--code-text-color);
-        background-color: var(--code-background-color);
+        color: var(--color-txt-two);
+        background-color: var(--color-bg-three);
         padding: 2px 4px;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
@@ -282,7 +282,7 @@
         font-size: 0.96em;
         border-radius: var(--card-border-radius);
         overflow: hidden;
-        background-color: var(--table-background-color);
+        background-color: var(--color-bg-two);
     }
 
     th,
@@ -296,9 +296,9 @@
     }
 
     th, {
-        border-bottom: 2px solid var(--th-border-color);
+        border-bottom: 2px solid var(--color-orange-one);
         // border-top: 2px solid var(--th-border-color);
-        background-color: var(--th-background-color);
+        background-color: var(--color-bg-one);
 
     }
 
@@ -308,11 +308,11 @@
     }
 
     tr:nth-child(even) {
-        background-color: var(--tr-even-background-color);
+        background-color: var(--color-bg-three);
     }
 
     .twitter-tweet {
-        color: var(--card-text-color-main);
+        color: var(--color-txt-one);
     }
 
     .video-wrapper {
