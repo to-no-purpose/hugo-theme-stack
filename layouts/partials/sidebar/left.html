@@ -6,14 +6,7 @@
     </button>
 
     <header class="site-info">
-        {{ with .Site.Params.sidebar.avatar }}
             <figure class="site-avatar">
-                {{ if not .local }}
-                    <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
-                {{ else }}
-                    {{ $avatar := resources.Get (.src) }}
-                    
-                    {{ if $avatar }}
                         <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                             <g transform="matrix(1,0,0,1,-1000,0)">
                             <g id="logo">
@@ -21,16 +14,10 @@
                             </g>
                             </g>
                             </svg>
-                    {{ else }}
-                        {{ errorf "Failed loading avatar from %q" . }}
-                    {{ end }}
-                {{ end }}
-
                 {{ with $.Site.Params.sidebar.emoji }}
                     <span class="emoji">{{ . }}</span>
                 {{ end }}
             </figure>
-        {{ end }}
         <h1 class="site-name"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
         <h2 class="site-description">{{ .Site.Params.sidebar.subtitle }}</h2>
     </header>
