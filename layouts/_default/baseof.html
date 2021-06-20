@@ -11,7 +11,7 @@
             <main class="main full-width">
                 {{- block "main" . }}{{- end }}
             </main>
-            {{- block "right-sidebar" . -}}{{ end }}
+            {{ partial "sidebar/right.html" . }}
         </div>
         {{ partial "footer/include.html" . }}
     </body>

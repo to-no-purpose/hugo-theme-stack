@@ -136,7 +136,6 @@
 
         width: 200px; // THIS IS WHAT CONTROLS WIDTH OF RIGHT SIDEBAR!!
 
-        margin-bottom: var(--section-separation);
 
         &:not(:last-of-type):after {
             content: "";
