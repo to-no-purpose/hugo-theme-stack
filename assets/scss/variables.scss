@@ -43,43 +43,43 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --color-txt-two: #192E34; // lighter - same as darkmode --color-bg-two
     --color-txt-inv: #E1F3FA; // lightest - same as --color-bg-one
 
-        // cyan accent colors
-        --color-cyan-one: #34A88A; // dark
-        --color-cyan-two: #81F3D3; // light
+    // cyan accent colors
+    --color-cyan-one: #34A88A; // dark
+    --color-cyan-two: #81F3D3; // light
 
-        // pink accent colors
-        --color-pink-one: #A83454; // dark
-        --color-pink-two: #F381A1; // light
+    // pink accent colors
+    --color-pink-one: #A83454; // dark
+    --color-pink-two: #F381A1; // light
     
-        // orange accent colors
-        --color-orange-one: #B36928; // dark
-        --color-orange-two: #FAB67A; // light
+    // orange accent colors
+    --color-orange-one: #B36928; // dark
+    --color-orange-two: #FAB67A; // light
 
     [data-scheme="dark"] {
 
         // DARK MODE
 
         // background colors
-        --color-bg-one: #0F1F24;   // darkest
+        --color-bg-one: #111E22;   // darkest
         --color-bg-two: #192E34;   // to
-        --color-bg-three: #243B42; // lightest
+        --color-bg-three: #213D45; // lightest
 
         // text colors
-        --color-txt-one: #DBF7FF; // light
-        --color-txt-two: #A0D9EE; // dark
-        --color-txt-inv: #0F1F24; // darkest - same as --color-bg-one
+        --color-txt-one: #E5FFF8; // light
+        --color-txt-two: #C1F1E3; // dark
+        --color-txt-inv: var(color-bg-one); // darkest
 
         // cyan accent colors
-        --color-cyan-one: #34A88A; // dark
-        --color-cyan-two: #81F3D3; // light
+        --color-cyan-one: #00E7A5; // dark
+        --color-cyan-two: #99FFE2; // light
 
         // pink accent colors
-        --color-pink-one: #A83454; // dark
-        --color-pink-two: #F381A1; // light
+        --color-pink-one: #FF336D; // dark
+        --color-pink-two: #FF99B6; // light
     
         // orange accent colors
-        --color-orange-one: #B36928; // dark
-        --color-orange-two: #FAB67A; // light
+        --color-orange-one: #FFC233; // dark
+        --color-orange-two: #FFE099; // light
     }
 }
 
