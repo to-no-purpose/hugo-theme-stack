@@ -38,6 +38,8 @@
 }
 
 .right-sidebar {
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
 
     &.sticky {
@@ -51,6 +53,12 @@
     @media (min-width: $on-tablet) {
         margin-left: 1%;
         padding-top: var(--main-top-padding);
+    }
+
+    @media (min-width: $on-phone + 1) {
+        margin-left: 1%;
+        padding: var(--main-top-padding) 15px;
+        max-height: 100vh;
     }
 }
 
@@ -125,6 +133,9 @@
 
 .sidebar {
     .widget {
+
+        width: 200px; // THIS IS WHAT CONTROLS WIDTH OF RIGHT SIDEBAR!!
+
         margin-bottom: var(--section-separation);
 
         &:not(:last-of-type):after {
