@@ -65,14 +65,14 @@
 }
 
 .article-subtitle {
-    font-weight: normal;
+    font-weight: 350;
     color: var(--color-txt-one);
     margin: 5px 0;
     line-height: 1.5;
 
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     @media (min-width: $on-desktop-large) {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 }
 
@@ -92,6 +92,8 @@
 
     time {
         font-size: 1.4rem;
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+        font-weight: 350;
     }
 }
 
@@ -117,13 +119,15 @@
         border-radius: var(--tag-border-radius);
         display: inline-block;
         font-size: 1.4rem;
-        // font-weight: ; might be worht adjusting w new font
         margin-right: 5px;
         transition: all 0.3s ease;
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
 
         &:hover {
                 box-shadow: var(--shadow-l2);
-                color: var(--color-pink-two);
+                color: var(--color-bg-one);
+                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-weight: 600;
             }
     }
 }
@@ -152,11 +156,14 @@
         font-size: 1.4rem;
         margin-right: 5px;
         transition: all 0.3s ease;
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
 
         &:hover {
                 box-shadow: var(--shadow-l2);
-                color: var(--color-cyan-two);
-        }
+                color: var(--color-bg-one);
+                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-weight: 600;
+            }
     }
 }
 

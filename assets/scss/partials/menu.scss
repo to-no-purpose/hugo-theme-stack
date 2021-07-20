@@ -132,6 +132,7 @@
     flex-grow: 1;
     font-size: 1.5rem;
 
+
     @media (min-width: $on-desktop-large) {
         margin-top: 30px;
     }
@@ -156,6 +157,7 @@
         position: relative;
         vertical-align: middle;
         padding: 10px 0;
+        transition: font-weight .2s;
 
         &:not(:last-of-type) {
             margin-bottom: 15px;
@@ -206,9 +208,14 @@
 
         &.current {
             a {
-                color: var(--color-cyan-two);
-                font-weight: bold;
+                color: var(--color-cyan-one);
+                font-weight: 600;
             }
+        }
+
+        &:hover {
+            font-weight: 600;
+            transition: font-weight .2s;
         }
     }
 }

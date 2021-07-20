@@ -263,15 +263,17 @@
     pre {
         overflow-x: auto;
         display: block;
-        background-color: var(--pre-background-color);
-        color: var(--pre-text-color);
+        background-color: var(--color-bg-three);
+        color: var(--color-txt-two);
         font-family: var(--code-font-family);
         line-height: 1.428571429;
         word-break: break-all;
         padding: var(--card-padding);
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+        font-weight: 300;
 
         code {
-            color: unset;
+            color: var(--color-txt-two);
             border: none;
             background: none;
             padding: 0;
@@ -285,9 +287,9 @@
         margin-bottom: 1.5em;
         margin-left: 1.5em;
         font-size: 0.96em;
-        border-radius: var(--tag-border-radius);
         overflow: hidden;
         background-color: var(--color-bg-two);
+        border-radius: var(--tag-border-radius);
     }
 
     th,
@@ -302,13 +304,12 @@
 
     th, {
         border-bottom: 2px solid var(--color-orange-one);
-        // border-top: 2px solid var(--th-border-color);
         background-color: var(--color-bg-one);
 
     }
 
     tr {
-        // border-bottom: 1px solid var(--table-border-color);
+        // border-bottom: 1px solid var(--color-orange-one);
         // border-top: 1px solid var(--table-border-color);
     }
 

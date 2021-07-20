@@ -6,6 +6,14 @@
 *   @link: https://github.com/CaiJimmy/hugo-theme-stack
 */
 
+@font-face {
+  font-family: 'RecVar';
+  font-style: oblique 0deg 15deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('/fonts/Recursive_VF_1.077.woff2') format('woff2');
+}
+
 @import "breakpoints.scss";
 @import "variables.scss";
 @import "grid.scss";
@@ -30,10 +38,16 @@
 a {
     text-decoration: none;
     color: var(--color-cyan-one);
-    transition: color .3s ease;
+    transition: font-variation-settings .3s, color .3s;
 
     &:hover {
         color: var(--color-cyan-two);
+        font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--crsv);
+
+        --mono: "MONO" .001;
+        --casl: "CASL" 1;
+        --slnt: "slnt" -10;
+        --crsv: "CRSV" 0;
     }
 
     &.link { // used to contain those weird expanding link underlines
@@ -50,7 +64,7 @@ a {
     margin-bottom: 10px;
     display: block;
     font-size: 1.6rem;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--color-txt-one);
 
     a {

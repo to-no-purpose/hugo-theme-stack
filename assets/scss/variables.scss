@@ -15,6 +15,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     @import "partials/highlight/dark.scss";
 }
 
+
 /*
 *   Global style
 */
@@ -34,26 +35,26 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     // LIGHT MODE
 
     // background colors
-    --color-bg-one: #E1F3FA;   // darkest
-    --color-bg-two: #F0FBFE;   // to
-    --color-bg-three: #FAFEFF; // lightest
+    --color-bg-one: #D8E5E9;   // darkest
+    --color-bg-two: #E2EBEE;   // to
+    --color-bg-three: #ECF2F4; // lightest
 
     // text colors
-    --color-txt-one: #0F1F24; // dark - same as darkmode --color-bg-one
-    --color-txt-two: #192E34; // lighter - same as darkmode --color-bg-two
-    --color-txt-inv: #E1F3FA; // lightest - same as --color-bg-one
+    --color-txt-one: #1C343B; // dark
+    --color-txt-two: #2D4A53; // lighter
+    --color-txt-inv: var(--color-bg-one); // lightest
 
     // cyan accent colors
-    --color-cyan-one: #34A88A; // dark
-    --color-cyan-two: #81F3D3; // light
+    --color-cyan-one: #338199; // dark
+    --color-cyan-two: #89DCF5; // light
 
     // pink accent colors
-    --color-pink-one: #A83454; // dark
-    --color-pink-two: #F381A1; // light
+    --color-pink-one: #CB4D71; // dark
+    --color-pink-two: #F9B8CB; // light
     
     // orange accent colors
-    --color-orange-one: #B36928; // dark
-    --color-orange-two: #FAB67A; // light
+    --color-orange-one: #AF6A9F; // dark
+    --color-orange-two: #F0C2E5; // light
 
     [data-scheme="dark"] {
 
@@ -67,7 +68,7 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         // text colors
         --color-txt-one: #E5FFF8; // light
         --color-txt-two: #C1F1E3; // dark
-        --color-txt-inv: var(color-bg-one); // darkest
+        --color-txt-inv: var(--color-bg-one); // darkest
 
         // cyan accent colors
         --color-cyan-one: #00E7A5; // dark
@@ -90,8 +91,10 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
 
-    --base-font-family: "Lato", var(--sys-font-family), var(--zh-font-family), sans-serif;
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    --base-font-family: "RecVar", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --code-font-family: "RecVar", monospace;
+
+    font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
 }
 
 /*

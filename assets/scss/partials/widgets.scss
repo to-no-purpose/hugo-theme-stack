@@ -34,14 +34,18 @@
             margin-right: 5px;
             font-size: 1.4rem;
             transition: all 0.3s ease;
+            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
 
             &:hover {
                 box-shadow: var(--shadow-l2);
-                color: var(--color-pink-two);
-            }
+                color: var(--color-bg-one);
+                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-weight: 600;
+                }
         }
     }
-    .pill_count { // not currently in use
+    /* NOT CURRENTLY IN USE
+    .pill_count { 
         background: var(--color-pink-two);
         border-top-right-radius: var(--tag-border-radius);
         border-bottom-right-radius: var(--tag-border-radius);
@@ -52,7 +56,7 @@
         padding-left: 4px;
         padding-right: 4px;
         color: var(--color-txt-inv);
-    }
+    } */
 }
 
 /* Tag cloud widget */
@@ -75,24 +79,15 @@
             margin-right: 5px;
             font-size: 1.4rem;
             transition: all 0.3s ease;
+            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
 
             &:hover {
                 box-shadow: var(--shadow-l2);
-                color: var(--color-cyan-two);
-            }
+                color: var(--color-bg-one);
+                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-weight: 600;
+                }
         }
-    }
-    .pill_count {
-        background: var(--color-cyan-two);
-        border-top-right-radius: var(--tag-border-radius);
-        border-bottom-right-radius: var(--tag-border-radius);
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;  
-        padding-top: 2px;
-        padding-bottom: 1px;
-        padding-left: 2px;
-        padding-right: 4px;
-        color: var(--color-bg-one);
     }
 }
 
