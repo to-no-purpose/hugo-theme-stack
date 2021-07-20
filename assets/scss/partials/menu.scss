@@ -106,9 +106,10 @@
     z-index: 2;
     cursor: pointer;
 
-    @media (min-width: $on-phone + 1) {
+    @include respond(md) {
         display: none;
     }
+
     outline: none;
 
     &.is-active {
@@ -126,69 +127,60 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-top: var(--sidebar-element-separation);
-    margin-bottom: 0;
     overflow-y: auto;
     flex-grow: 1;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 
+    background-color: var(--color-bg-two);
+    padding: 15px 0;
+    box-shadow: var(--shadow-l1);
+    display: none;
 
-    @media (min-width: $on-desktop-large) {
-        margin-top: 30px;
+    margin: 0 -15px;
+
+    &.show {
+        display: block;
     }
 
-    @media (max-width: $on-phone) {
-        background-color: var(--color-bg-two);
-        margin-top: 0;
-        padding: 15px 0;
-        box-shadow: var(--shadow-l1);
-        display: none;
-
-        &.show {
-            display: block;
-        }
-    }
-
-    @media (min-width: $on-phone + 1) {
+    @include respond(md) {
         align-items: flex-end;
+        display: flex;
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+        margin: 0;
+        margin-top: var(--sidebar-element-separation);
+    }
+
+    @include respond(xl) {
+        margin-top: 30px;
     }
 
     li {
         position: relative;
         vertical-align: middle;
-        padding: 10px 0;
+        padding: 10px 30px;
         transition: font-weight .2s;
 
         &:not(:last-of-type) {
             margin-bottom: 15px;
 
-            @media (min-width: $on-desktop-large) {
+            @include respond(xl) {
                 margin-bottom: 20px;
             }
         }
 
-        @media (max-width: $on-phone) {
-            padding: 10px 30px;
-        }
-
-        @media (min-width: $on-phone + 1) and (max-width: ($on-desktop - 1)) {
+        @include respond(md) {
+            width: 100%;
             padding: 10px 0;
         }
 
-        @media (min-width: $on-phone + 1) {
-            width: 100%;
-        }
-
         svg {
-            width: 25px;
-            height: 25px;
             stroke-width: 1.33;
             margin-right: 40px;
 
-            @media (max-width: $on-desktop-large) {
-                width: 20px;
-                height: 20px;
-            }
+            width: 20px;
+            height: 20px;
         }
 
         a {
@@ -196,10 +188,6 @@
             display: inline-flex;
             align-items: center;
             color: var(--color-txt-one);
-
-            @media (max-width: $on-desktop-large) {
-                font-size: 1.4rem;
-            }
         }
 
         span {
