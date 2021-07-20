@@ -1,5 +1,6 @@
 .widget {
 
+
     
     .widget-icon {
         svg {
@@ -19,6 +20,7 @@
     .categoryCloud-tags {
         display: flex;
         flex-wrap: wrap;
+        width: 75%;
 
         a {
             background: var(--color-pink-one);
@@ -64,6 +66,7 @@
     .tagCloud-tags {
         display: flex;
         flex-wrap: wrap;
+        width: 75%;
 
         a {
             background: var(--color-cyan-one);
