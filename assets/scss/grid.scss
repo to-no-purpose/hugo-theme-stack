@@ -60,7 +60,7 @@
         flex-direction: column;
     }
 
-    &.on-phone--column {
+    &.on-phone--column {              // removing this causes the same blank page bug everywhere as is happening with toc articles
         flex-direction: column;
         @include respond(md) {
             flex-direction: unset;

@@ -35,6 +35,12 @@
 
 @import "custom.scss";
 
+mark {
+  background-color: inherit;
+  color: var(--color-orange-one); 
+  font-weight: bold;
+}
+
 a {
     text-decoration: none;
     color: var(--color-cyan-one);
