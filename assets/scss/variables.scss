@@ -97,7 +97,13 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --base-font-family: "RecVar", var(--sys-font-family), var(--zh-font-family), sans-serif;
     --code-font-family: "RecVar", monospace;
 
-    font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
+    font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--crsv);
+
+        --mono: "MONO" .001;
+        --casl: "CASL" 0;
+        --slnt: "slnt" 0;
+        --crsv: "CRSV" 0;
+
 }
 
 /*
