@@ -51,7 +51,7 @@
 .hamburger-inner::after {
     width: 30px;
     height: 2px;
-    background-color: var(--color-bg-two);
+    background-color: var(--color-txt-two);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -116,7 +116,7 @@
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
-            background-color: var(--color-txt-two);
+            background-color: var(--color-txt-one);
         }
     }
 }
