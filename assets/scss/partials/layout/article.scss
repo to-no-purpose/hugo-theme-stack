@@ -340,11 +340,13 @@
         width: auto;
         border-collapse: collapse;
         border-spacing: 1;
-        margin-bottom: 1.5em;
-        margin-left: 1.5em;
         font-size: 0.96em;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: auto;
         background-color: var(--color-bg-two);
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.5em;
         border-radius: var(--tag-border-radius);
     }
 

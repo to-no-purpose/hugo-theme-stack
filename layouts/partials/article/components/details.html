@@ -23,21 +23,23 @@
     {{ if .Params.categories }}
     <footer class="article-category">
     {{ partial "helper/icon" "categories" }}
-    {{ range (.GetTerms "categories") }}
+        <span class="article-category-pills"> {{ range (.GetTerms "categories") }}
         <a href="{{ .RelPermalink }}">
         {{ .LinkTitle }}
         </a>
         {{ end }}
+        </span>
     </footer>
     {{ end }}
 
     {{ if .Params.Tags }}
         <footer class="article-tags">
         {{ partial "helper/icon" "tag" }}
-        {{ range (.GetTerms "tags") }}
+            <span class="article-tag-pills"> {{ range (.GetTerms "tags") }}
             <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        {{ end }}
-        </footer>
+            {{ end }}
+            </footer>
+            </span>
     {{ end }}
 
     {{- end -}}

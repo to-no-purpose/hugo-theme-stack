@@ -100,7 +100,7 @@
     margin-top: 10px;
     color: var(--color-txt-two);
     display: flex;
-    flex-wrap: wrap;
+    flex: none;
     text-transform: lowercase;
 
     svg {
@@ -112,31 +112,37 @@
     color: var(--color-txt-two);
     }
 
-    a { // tag pill
-        color: var(--color-bg-one);
-        background-color: var(--color-pink-one);
-        padding: 4px 4px;
-        border-radius: var(--tag-border-radius);
-        display: inline-block;
-        font-size: 1.4rem;
-        margin-right: 5px;
-        transition: all 0.3s ease;
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+    .article-category-pills {
+        display: flex;
+        flex-wrap: wrap;
 
-        &:hover {
-                box-shadow: var(--shadow-l2);
-                color: var(--color-bg-one);
-                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
-                font-weight: 600;
-            }
+        a { // tag pill
+            color: var(--color-bg-one);
+            background-color: var(--color-pink-one);
+            padding: 4px 4px;
+            border-radius: var(--tag-border-radius);
+            display: flex;
+            font-size: 1.4rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+    
+            &:hover {
+                    box-shadow: var(--shadow-l2);
+                    color: var(--color-bg-one);
+                    font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
+                    font-weight: 600;
+                }
+        }
     }
 }
 
 .article-tags {
-    margin-top: 10px;
+    margin-top: 5px;
     color: var(--color-txt-two);
     display: flex;
-    flex-wrap: wrap;
+    flex: none;
     text-transform: lowercase;
 
     svg {
@@ -148,23 +154,29 @@
     color: var(--color-txt-two);
     }
 
-    a { // tag pill
-        color: var(--color-bg-one);
-        background-color: var(--color-cyan-one);
-        padding: 4px 4px;
-        border-radius: var(--tag-border-radius);
-        display: inline-block;
-        font-size: 1.4rem;
-        margin-right: 5px;
-        transition: all 0.3s ease;
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+    .article-tag-pills {
+        display: flex;
+        flex-wrap: wrap;
 
-        &:hover {
-                box-shadow: var(--shadow-l2);
-                color: var(--color-bg-one);
-                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
-                font-weight: 600;
+        a { // tag pill
+            color: var(--color-bg-one);
+            background-color: var(--color-cyan-one);
+            padding: 4px 4px;
+            border-radius: var(--tag-border-radius);
+            display: inline-block;
+            font-size: 1.4rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            transition: all 0.3s ease;
+            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+    
+            &:hover {
+                    box-shadow: var(--shadow-l2);
+                    color: var(--color-bg-one);
+                    font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
+                    font-weight: 600;
             }
+        }    
     }
 }
 

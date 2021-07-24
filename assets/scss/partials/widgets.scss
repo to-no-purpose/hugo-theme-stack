@@ -23,6 +23,7 @@
         width: 100%;
         text-transform: lowercase;
 
+
         a {
             background: var(--color-pink-one);
             box-shadow: var(--shadow-l1);
@@ -42,7 +43,7 @@
             &:hover {
                 box-shadow: var(--shadow-l2);
                 color: var(--color-bg-one);
-                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
                 font-weight: 600;
                 }
         }
@@ -89,7 +90,7 @@
             &:hover {
                 box-shadow: var(--shadow-l2);
                 color: var(--color-bg-one);
-                font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+                font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
                 font-weight: 600;
                 }
         }
