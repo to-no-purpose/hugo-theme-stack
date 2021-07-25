@@ -47,12 +47,8 @@ a {
     transition: all .3s;
 
     &:hover {
-        font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--crsv);
+        font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "CRSV" 0;
 
-        --mono: "MONO" .001;
-        --casl: "CASL" 1;
-        --slnt: "slnt" -10;
-        --crsv: "CRSV" 0;
     }
 
     &.link { // used to contain those weird expanding link underlines
@@ -68,12 +64,13 @@ a {
 }
 
 .section-title {
+    font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
     display: block;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--color-txt-one);
 
     a {
