@@ -52,7 +52,9 @@ a {
 
         &:hover {
 
+            transition: all .2s;
             color: var(--color-pink-two);
+            font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "CRSV" 0;
 
         }
     }
