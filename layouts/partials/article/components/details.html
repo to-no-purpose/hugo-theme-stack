@@ -22,11 +22,9 @@
 
     {{ if .Params.categories }}
     <footer class="article-category">
-    {{ partial "helper/icon" "categories" }}
+    <span>{{ partial "helper/icon" "categories" }}</span>
         <span class="article-category-pills"> {{ range (.GetTerms "categories") }}
-        <a href="{{ .RelPermalink }}">
-        {{ .LinkTitle }}
-        </a>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
         {{ end }}
         </span>
     </footer>
@@ -34,12 +32,12 @@
 
     {{ if .Params.Tags }}
         <footer class="article-tags">
-        {{ partial "helper/icon" "tag" }}
+        <span>{{ partial "helper/icon" "tag" }}</span>
             <span class="article-tag-pills"> {{ range (.GetTerms "tags") }}
             <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
             {{ end }}
-            </footer>
             </span>
+        </footer>
     {{ end }}
 
     {{- end -}}

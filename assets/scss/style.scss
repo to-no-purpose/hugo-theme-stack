@@ -44,7 +44,7 @@ mark {
 a {
     text-decoration: none;
     color: inherit;
-    transition: font-variation-settings .3s;
+    transition: all .3s;
 
     &:hover {
         font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--crsv);
@@ -57,11 +57,11 @@ a {
 
     &.link { // used to contain those weird expanding link underlines
 
-            color: var(--color-cyan-one);
+            color: var(--color-pink-one);
 
         &:hover {
 
-            color: var(--color-cyan-two);
+            color: var(--color-pink-two);
 
         }
     }

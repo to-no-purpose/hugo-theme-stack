@@ -340,9 +340,8 @@
         width: auto;
         border-collapse: collapse;
         border-spacing: 1;
+        overflow: hidden;
         font-size: 0.96em;
-        overflow-y: auto;
-        overflow-x: auto;
         background-color: var(--color-bg-two);
         margin-right: auto;
         margin-left: auto;

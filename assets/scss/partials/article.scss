@@ -141,9 +141,8 @@
 .article-tags {
     margin-top: 5px;
     color: var(--color-txt-two);
-    display: flex;
-    flex: none;
     text-transform: lowercase;
+    display: flex;
 
     svg {
     vertical-align: middle;
