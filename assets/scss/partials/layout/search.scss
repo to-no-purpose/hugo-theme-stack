@@ -22,17 +22,9 @@
         margin: 0;
     }
 
-    label {
-        position: absolute;
-        top: 15px;
-        left: 20px;
-        font-size: 1.4rem;
-        color: var(--color-txt-two);
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
-    }
 
     input {
-        padding: 40px 20px 20px;
+        padding: 20px 20px 20px;
         border-radius: var(--card-border-radius);
         background-color: var(--color-bg-two);
         box-shadow: var(--shadow-l1);
@@ -44,7 +36,7 @@
         transition: box-shadow 0.3s ease;
 
         font-size: 1.6rem;
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+        font-variation-settings: "MONO" 1, "CASL" 1, "slnt" 0, "CRSV" 0;
 
         &:focus {
             outline: 0;
@@ -54,7 +46,8 @@
         &::placeholder {
             opacity: 1;
             color: var(--color-txt-inv);
-            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" -15, "CRSV" 0;
+            font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -15, "CRSV" 0;
+            font-weight: 600;
 
         }
     }

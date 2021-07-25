@@ -165,11 +165,11 @@
 
 
     a {
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+        font-variation-settings: "MONO" 1, "CASL" 1, "slnt" 0, "CRSV" 0;
         transition: all 0.3s ease;
 
         &:hover {
-            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" -10, "CRSV" 0;
+            font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -15, "CRSV" 0;
             font-weight: 600;
         }
     }
@@ -245,6 +245,8 @@
     font-size: var(--article-font-size);
     padding: 0 var(--card-padding);
     line-height: var(--article-line-height);
+    font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
+    font-weight: 375;
 
     & > p {
         margin: 1.5em 0;
@@ -256,6 +258,7 @@
     h4,
     h5,
     h6 {
+        font-variation-settings: "MONO" 0, "CASL" .5, "slnt" 0, "CRSV" 0;
         margin-left: calc((var(--card-padding)) * -1);
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
         border-left: var(--heading-border-size) solid var(--color-orange-one);
@@ -281,10 +284,11 @@
         border-left: var(--blockquote-border-size) solid var(--color-orange-one);
         padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
         background-color: var(--color-bg-three);
+        font-variation-settings: "MONO" 1, "CASL" .5, "slnt" 0, "CRSV" 0;
     }
 
     hr {
-        width: 100px;
+        width: 75%;
         margin: 40px auto;
         background: var(--color-txt-two);
         height: 2px;
@@ -298,6 +302,7 @@
         padding: 2px 4px;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
+        font-variation-settings: "MONO" 1, "CASL" .5, "slnt" 0, "CRSV" 0;
     }
 
     .gallery {
@@ -325,7 +330,7 @@
         line-height: 1.428571429;
         word-break: break-all;
         padding: var(--card-padding);
-        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+        font-variation-settings: "MONO" 1, "CASL" .5, "slnt" 0, "CRSV" 0;
         font-weight: 300;
 
         code {
@@ -362,6 +367,8 @@
     th, {
         border-bottom: 2px solid var(--color-orange-one);
         background-color: var(--color-bg-one);
+        font-variation-settings: "MONO" 0, "CASL" .5, "slnt" 0, "CRSV" 0;
+        font-weight: 700;
 
     }
 
@@ -393,6 +400,12 @@
             top: 0;
             border: 0;
         }
+    }
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% + var(--card-padding) * 2);    
     }
 
     /// Negative margins

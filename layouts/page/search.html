@@ -5,15 +5,12 @@
     {{- end -}}
 {{ end }}
 {{ define "main" }}
+<label class=section-title><span class="icon">{{ partial "helper/icon" "search" }}</span> {{ T "search.title" }}</label>
 <form action="{{ .Permalink }}" autocomplete="off" class="search-form"{{ with .OutputFormats.Get "json" -}} data-json="{{ .Permalink }}"{{- end }}>
     <p>
-        <label>{{ T "search.title" }}</label>
         <input name="keyword" placeholder="{{ T `search.placeholder` }}" />
     </p>
 
-    <button title="{{ T `search.title` }}">
-        {{ partial "helper/icon" "search" }}
-    </button>
 </form>
 
 <h3 class="search-result--title section-title"></h3>
