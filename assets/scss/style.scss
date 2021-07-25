@@ -46,11 +46,6 @@ a {
     color: inherit;
     transition: all .3s;
 
-    &:hover {
-        font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "CRSV" 0;
-
-    }
-
     &.link { // used to contain those weird expanding link underlines
 
             color: var(--color-pink-one);
