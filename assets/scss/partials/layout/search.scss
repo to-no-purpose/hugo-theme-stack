@@ -28,6 +28,7 @@
         left: 20px;
         font-size: 1.4rem;
         color: var(--color-txt-two);
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
     }
 
     input {
@@ -42,11 +43,19 @@
 
         transition: box-shadow 0.3s ease;
 
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
 
         &:focus {
             outline: 0;
             box-shadow: var(--shadow-l2);
+        }
+
+        &::placeholder {
+            opacity: 1;
+            color: var(--color-txt-inv);
+            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" -15, "CRSV" 0;
+
         }
     }
 
