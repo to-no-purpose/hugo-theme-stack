@@ -256,6 +256,7 @@
 
         &:hover {
             box-shadow: var(--shadow-l2);
+            font-variation-settings: "MONO" 0, "CASL" .5, "slnt" -15, "CRSV" 0;
         }
 
         &.has-image {
@@ -300,8 +301,15 @@
 
         .article-title {
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 400;
             color: var(--color-txt-one);
+            font-variation-settings: inherit;
+            transition: all .2s;
+
+            &:hover {
+                font-variation-settings: "MONO" 0, "CASL" .5, "slnt" -15, "CRSV" 0;
+
+            }
 
             @include respond(sm) {
                 font-size: 2.2rem;
