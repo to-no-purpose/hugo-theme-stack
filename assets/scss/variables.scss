@@ -35,26 +35,25 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     // LIGHT MODE
 
     // background colors
-    --color-bg-one: #D8E5E9;   // darkest
-    --color-bg-two: #E2EBEE;   // to
-    --color-bg-three: #ECF2F4; // lightest
+    --color-bg-one: #E9E7E2;   // darkest
+    --color-bg-two: #F4F3F0;   // to
+    --color-bg-three: #FBFBF8; // lightest
 
     // text colors
-    --color-txt-one: #1C343B; // dark
-    --color-txt-two: #2D4A53; // lighter
+    --color-txt-one: #292314; // dark
+    --color-txt-two: #504E49; // lighter
     --color-txt-inv: var(--color-bg-one); // lightest
 
     // cyan accent colors
-    --color-cyan-one: #338199; // dark
-    --color-cyan-two: #89DCF5; // light
-
+    --color-cyan-one: #29A381; // dark
+    --color-cyan-two: #C6ECE1; // light
     // pink accent colors
-    --color-pink-one: #CB4D71; // dark
-    --color-pink-two: #F9B8CB; // light
-    
+    --color-pink-one: #C65373; // dark
+    --color-pink-two: #E8C9D2; // light
+
     // orange accent colors
-    --color-orange-one: #AF6A9F; // dark
-    --color-orange-two: #F0C2E5; // light
+    --color-orange-one: #DDAC3C; // dark
+    --color-orange-two: #F0E2C2; // light
 
     &[data-scheme="dark"] {
 
