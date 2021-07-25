@@ -1,32 +1,45 @@
 footer.site-footer {
-    padding: 20px 0 var(--section-separation) 0;
+    padding: 4px;
     font-size: 1.4rem;
     line-height: 1.75;
     margin-top: var(--section-separation);
 
-    &:before {
-        content: "";
-        display: block;
-        border-radius: 20px;
-        height: 1px;
-        width: 100%;
-        background: var(--color-bg-two);
-        margin-bottom: 20px;
-    }
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-bg-two);
+    box-shadow: var(--shadow-l1);
+
+    font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+
+   //&:before {
+   //    content: "";
+   //    display: block;
+   //    border-radius: 20px;
+   //    height: 4px;
+   //    width: 100%;
+   //    background: var(--color-bg-two);
+   //    margin-bottom: 20px;
+   //}
 
     .copyright {
         color: var(--color-txt-two);
         font-weight: bold;
-        margin-bottom: 5px;
     }
 
     .powerby {
+
         color: var(--color-txt-two);
         font-weight: normal;
-        font-size: 1rem;
+        font-size: 1.2rem;
+
+        text-align: center;
 
         a {
             color: var(--color-txt-one);
+
+            &:hover {
+                font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -15, "CRSV" 0;
+                font-weight: 600;
+            }
         }
     }
 }
