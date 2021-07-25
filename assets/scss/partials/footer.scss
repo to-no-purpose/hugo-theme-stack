@@ -3,12 +3,13 @@ footer.site-footer {
     font-size: 1.4rem;
     line-height: 1.75;
     margin-top: var(--section-separation);
+    margin-bottom: calc((var(--section-separation)*.5);
 
     border-radius: var(--card-border-radius);
     background-color: var(--color-bg-two);
     box-shadow: var(--shadow-l1);
 
-    font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+    font-variation-settings: "MONO" 1, "CASL" 0.5, "slnt" 0, "CRSV" 0;
 
    //&:before {
    //    content: "";
