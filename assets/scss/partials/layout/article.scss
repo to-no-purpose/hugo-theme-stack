@@ -10,7 +10,7 @@
     .main-article {
         background: var(--color-bg-two);
         border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-one);
         overflow: hidden;
 
         &.main-article {
@@ -96,10 +96,10 @@
 
         transition: box-shadow 0.3s ease;
 
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-one);
 
         &:hover {
-            box-shadow: var(--shadow-l2);
+            box-shadow: var(--shadow-two);
         }
 
         svg {
@@ -155,7 +155,7 @@
 .widget--toc {
     background-color: var(--color-bg-two);
     border-radius: var(--card-border-radius);
-    box-shadow: var(--shadow-l1);
+    box-shadow: var(--shadow-one);
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -261,11 +261,11 @@
         font-variation-settings: "MONO" 0, "CASL" .5, "slnt" 0, "CRSV" 0;
         margin-left: calc((var(--card-padding)) * -1);
         padding-left: calc(var(--card-padding) - var(--heading-border-size));
-        border-left: var(--heading-border-size) solid var(--color-orange-one);
+        border-left: var(--heading-border-size) solid var(--accent-three);
     }
 
     h1 {
-        border-left: var(--heading-border-size) solid var(--color-orange-two);
+        border-left: var(--heading-border-size) solid var(--accent-three);
 
     }
 
@@ -281,7 +281,7 @@
     blockquote {
         position: relative;
         margin: 1.5em 0;
-        border-left: var(--blockquote-border-size) solid var(--color-orange-one);
+        border-left: var(--blockquote-border-size) solid var(--accent-three);
         padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
         background-color: var(--color-bg-three);
         font-variation-settings: "MONO" 1, "CASL" .5, "slnt" 0, "CRSV" 0;
@@ -365,7 +365,7 @@
     }
 
     th, {
-        border-bottom: 2px solid var(--color-orange-one);
+        border-bottom: 2px solid var(--accent-three);
         background-color: var(--color-bg-one);
         font-variation-settings: "MONO" 0, "CASL" .5, "slnt" 0, "CRSV" 0;
         font-weight: 700;
@@ -373,7 +373,7 @@
     }
 
     tr {
-        // border-bottom: 1px solid var(--color-orange-one);
+        // border-bottom: 1px solid var(--accent-three);
         // border-top: 1px solid var(--table-border-color);
     }
 

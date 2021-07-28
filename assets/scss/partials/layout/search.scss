@@ -27,7 +27,7 @@
         padding: 20px 20px 20px;
         border-radius: var(--card-border-radius);
         background-color: var(--color-bg-two);
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-one);
         color: var(--color-txt-one);
         width: 100%;
         border: 0;
@@ -40,12 +40,12 @@
 
         &:focus {
             outline: 0;
-            box-shadow: var(--shadow-l2);
+            box-shadow: var(--shadow-two);
         }
 
         &::placeholder {
             opacity: 1;
-            color: var(--color-txt-inv);
+            color: var(--color-txt-three);
             font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -15, "CRSV" 0;
             font-weight: 600;
 

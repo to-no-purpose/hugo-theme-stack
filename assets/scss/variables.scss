@@ -1,6 +1,3 @@
-$defaultTagBackgrounds: #8ea885, #df7988, #0177b8, #ffb900, #6b69d6;
-$defaultTagColors: #fff, #fff, #fff, #fff, #fff;
-
 // think this shit is for code but idk tbh. test later
 
 [data-scheme="light"] {
@@ -42,47 +39,52 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     // text colors
     --color-txt-one: #292314; // dark
     --color-txt-two: #504E49; // lighter
-    --color-txt-inv: var(--color-bg-one); // lightest
+    --color-txt-three: var(--color-bg-one); // lightest
 
-    // cyan accent colors
-    --color-cyan-one: #00996E; // dark
-    --color-cyan-two: #36E2B2; // light
-    // pink accent colors
-    --color-pink-one: #B21A45; // dark
-    --color-pink-two: #F25A85; // light
+    // accent colors
+    --color-accent-one: #00996E; // dark
+    --accent-two: #B21A45; // dark
+    --accent-three: #E5A100; // dark
 
-    // orange accent colors
-    --color-orange-one: #E5A100; // dark
-    --color-orange-two: #FFD166; // light
+    --shadow-one: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    --shadow-two: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 
     &[data-scheme="dark"] {
 
-        // DARK MODE
-
         // background colors
-        --color-bg-one: #111E22;   // darkest
-        --color-bg-two: #1B2D32;   // to
-        --color-bg-three: #263A40; // lightest
+        --color-bg-h: 195;
+        --color-bg-one: hsl(var(--color-bg-h), 35%, 10%);      // darkest
+        --color-bg-two: hsl(var(--color-bg-h), 30%, 15%);      // to
+        --color-bg-three: hsl(var(--color-bg-h), 25%, 20%);    // lightest
 
         // text colors
-        --color-txt-one: #D9ECF2; // light
-        --color-txt-two: #80A7B3; // dark
-        --color-txt-inv: var(--color-bg-one); // darkest
+        --color-txt-one: hsl(var(--color-bg-h), 50%, 90%);     // lightest
+        --color-txt-two: hsl(var(--color-bg-h), 25%, 60%);     // to
+        --color-txt-three: var(--color-bg-one);            // darkest
 
-        // cyan accent colors
-        --color-cyan-one: #1AE5B2; // dark
-        --color-cyan-two: #99FFE2; // light
+        // cyanogreen
+        --accent-one-h: 165;
+        --accent-one-s: 80%;
+        --accent-one-l: 50%;
+        --accent-one: hsl(var(--accent-one-h), var(--accent-one-s), var(--accent-one-l));
+        
+        // pink
+        --accent-two-h: 345;
+        --accent-two-s: 80%;
+        --accent-two-l: 65%;
+        --accent-two: hsl(var(--accent-two-h), var(--accent-two-s), var(--accent-two-l));
+        
+        //yellow
+        --accent-three-h: 50;
+        --accent-three-s: 80%;
+        --accent-three-l: 65%;
+        --accent-three: hsl(var(--accent-three-h), var(--accent-three-s), var(--accent-three-l));
 
-        // pink accent colors
-        --color-pink-one: #ED5E82; // dark 
-        --color-pink-two: #FF99B6; // light
-    
-        // orange accent colors
-        --color-orange-one: #EDD55E; // dark
-        --color-orange-two: #FFE099; // light
+        --scrollbar-thumb: var(--color-bg-two);
+        --scrollbar-track: var(--color-bg-one);
 
-        --scrollbar-thumb: #424242;
-        --scrollbar-track: var(--color-bg-two);
+        --shadow-one: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        --shadow-two: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     }
 }
 
@@ -91,17 +93,11 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
-    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
 
-    --base-font-family: "RecVar", var(--sys-font-family), var(--zh-font-family), sans-serif;
+    --base-font-family: "RecVar", var(--sys-font-family), sans-serif;
     --code-font-family: "RecVar", monospace;
 
-    font-variation-settings: var(--mono), var(--casl), var(--slnt), var(--crsv);
-
-        --mono: "MONO" 0;
-        --casl: "CASL" 0;
-        --slnt: "slnt" 0;
-        --crsv: "CRSV" 0;
+    font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
 
 }
 
@@ -134,7 +130,6 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 *   Article content font settings
 */
 :root {
-    --article-font-family: var(--base-font-family);
     --article-font-size: 1.6rem;
 
     @include respond(md) {
@@ -152,22 +147,4 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --heading-border-size: 4px;
 
-    --link-background-color: 189, 195, 199; // altering this broke the link styling somehow when i did it before
-    --link-background-opacity: 0.5;
-    --link-background-opacity-hover: 0.7;
-
-    --pre-background-color: #272822; // not sure what these are, probably code?
-    --pre-text-color: #f8f8f2;       //     ref found in scss/partials/layout/article.scss
-}
-
-/*
-*   Shadow style
-*   Thanks to https://www.figma.com/community/plugin/744987207861965946/Shadow-picker
-*/
-:root {
-    --shadow-l1: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l2: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l3: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-    --shadow-l4: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
-        0px 0px 1px rgba(0, 0, 0, 0.04);
 }

@@ -7,14 +7,14 @@
         display: flex;
         flex-direction: column;
         background-color: var(--color-bg-two);
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-one);
         border-radius: var(--card-border-radius);
         overflow: hidden;
 
         transition: box-shadow 0.3s ease;
 
         &:hover {
-            box-shadow: var(--shadow-l2);
+            box-shadow: var(--shadow-two);
         }
 
         &:not(:last-of-type) {
@@ -52,7 +52,7 @@
     font-variation-settings: "MONO" 0, "CASL" 0.5, "slnt" 0, "CRSV" 0;
     font-weight: 600;
     margin: 10px 0;
-    color: var(--color-cyan-one);
+    color: var(--accent-one);
     transition: all .2s;
 
     &:hover {
@@ -124,7 +124,7 @@
 
         a { // tag pill
             color: var(--color-bg-one);
-            background-color: var(--color-pink-one);
+            background-color: var(--accent-two);
             padding: 4px 4px;
             border-radius: var(--tag-border-radius);
             display: flex;
@@ -135,7 +135,7 @@
             font-variation-settings: "MONO" 1, "CASL" 1, "slnt" 0, "CRSV" 0;
     
             &:hover {
-                    box-shadow: var(--shadow-l2);
+                    box-shadow: var(--shadow-two);
                     color: var(--color-bg-one);
                     font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
                     font-weight: 600;
@@ -165,7 +165,7 @@
 
         a { // tag pill
             color: var(--color-bg-one);
-            background-color: var(--color-cyan-one);
+            background-color: var(--accent-one);
             padding: 4px 4px;
             border-radius: var(--tag-border-radius);
             display: inline-block;
@@ -176,7 +176,7 @@
             font-variation-settings: "MONO" 1, "CASL" 1, "slnt" 0, "CRSV" 0;
     
             &:hover {
-                    box-shadow: var(--shadow-l2);
+                    box-shadow: var(--shadow-two);
                     color: var(--color-bg-one);
                     font-variation-settings: "MONO" 1, "CASL" 1, "slnt" -5, "CRSV" 0;
                     font-weight: 600;
@@ -189,7 +189,7 @@
 /* Compact style article list */
 .article-list--compact {
     border-radius: var(--card-border-radius);
-    box-shadow: var(--shadow-l1);
+    box-shadow: var(--shadow-one);
     background-color: var(--color-bg-two);
     --image-size: 50px;
 
@@ -261,12 +261,12 @@
         position: relative;
         height: 350px;
         width: 250px;
-        box-shadow: var(--shadow-l1);
+        box-shadow: var(--shadow-one);
         transition: box-shadow 0.3s ease;
         background-color: var(--color-bg-two);
 
         &:hover {
-            box-shadow: var(--shadow-l2);
+            box-shadow: var(--shadow-two);
             font-variation-settings: "MONO" 0, "CASL" .5, "slnt" -15, "CRSV" 0;
         }
 

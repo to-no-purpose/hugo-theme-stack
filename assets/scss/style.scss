@@ -37,7 +37,7 @@
 
 mark {
   background-color: inherit;
-  color: var(--color-orange-one); 
+  color: var(--accent-three); 
   font-weight: bold;
 }
 
@@ -48,12 +48,12 @@ a {
 
     &.link { // used to contain those weird expanding link underlines
 
-            color: var(--color-pink-one);
+            color: var(--accent-two);
 
         &:hover {
 
             transition: all .2s;
-            color: var(--color-pink-two);
+            color: var(--accent-two);
             font-variation-settings: "MONO" 0, "CASL" 1, "slnt" -15, "CRSV" 0;
 
         }
