@@ -60,6 +60,11 @@
     --accent-three-l: 50%;
     --accent-three: hsl(var(--accent-three-h), var(--accent-three-s), var(--accent-three-l));
 
+    //table
+    --table-head: hsl(var(--color-bg-h), 20%, 99%);
+    --table-bg: hsl(var(--color-bg-h), 15%, 93%);
+    --table-even: hsl(var(--color-bg-h), 10%, 87%);
+
     --scrollbar-thumb: var(--color-bg-two);
     --scrollbar-track: var(--color-bg-one);
 
@@ -97,11 +102,17 @@
         --accent-three-l: 65%;
         --accent-three: hsl(var(--accent-three-h), var(--accent-three-s), var(--accent-three-l));
 
+        //table
+
+        --table-head: hsl(var(--color-bg-h), 35%, 10%);
+        --table-bg: hsl(var(--color-bg-h), 30%, 14%);
+        --table-even: hsl(var(--color-bg-h), 30%, 18%);
+
         --scrollbar-thumb: var(--color-bg-two);
         --scrollbar-track: var(--color-bg-one);
 
-        --shadow-one: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
-        --shadow-two: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+        --shadow-one: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.1);
+        --shadow-two: 0px 10px 20px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 1px rgba(0, 0, 0, 0.12);
     }
 }
 
