@@ -32,19 +32,36 @@
     // LIGHT MODE
 
     // background colors
-    --color-bg-one: #F4F3F0;   // darkest
-    --color-bg-two: #FAFAF9;   // to
-    --color-bg-three: #FFFFFF; // lightest
+    --color-bg-h: 195;
+    --color-bg-one: hsl(var(--color-bg-h), 15%, 85%);      // darkest
+    --color-bg-two: hsl(var(--color-bg-h), 10%, 90%);      // to
+    --color-bg-three: hsl(var(--color-bg-h), 10%, 95%);    // lightest
 
     // text colors
-    --color-txt-one: #292314; // dark
-    --color-txt-two: #504E49; // lighter
-    --color-txt-three: var(--color-bg-one); // lightest
+    --color-txt-one: hsl(var(--color-bg-h), 30%, 15%);     
+    --color-txt-two: hsl(var(--color-bg-h), 20%, 35%);     
+    --color-txt-three: hsl(var(--color-bg-h), 25%, 60%);   
 
-    // accent colors
-    --color-accent-one: #00996E; // dark
-    --accent-two: #B21A45; // dark
-    --accent-three: #E5A100; // dark
+    // cyanogreen
+    --accent-one-h: 165;
+    --accent-one-s: 100%;
+    --accent-one-l: 34%;
+    --accent-one: hsl(var(--accent-one-h), var(--accent-one-s), var(--accent-one-l));
+    
+    // pink
+    --accent-two-h: 345;
+    --accent-two-s: 70%;
+    --accent-two-l: 50%;
+    --accent-two: hsl(var(--accent-two-h), var(--accent-two-s), var(--accent-two-l));
+    
+    //yellow
+    --accent-three-h: 50;
+    --accent-three-s: 91%;
+    --accent-three-l: 50%;
+    --accent-three: hsl(var(--accent-three-h), var(--accent-three-s), var(--accent-three-l));
+
+    --scrollbar-thumb: var(--color-bg-two);
+    --scrollbar-track: var(--color-bg-one);
 
     --shadow-one: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
     --shadow-two: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
@@ -64,19 +81,19 @@
 
         // cyanogreen
         --accent-one-h: 165;
-        --accent-one-s: 80%;
-        --accent-one-l: 50%;
+        --accent-one-s: 95%;
+        --accent-one-l: 43%;
         --accent-one: hsl(var(--accent-one-h), var(--accent-one-s), var(--accent-one-l));
         
         // pink
         --accent-two-h: 345;
-        --accent-two-s: 80%;
-        --accent-two-l: 65%;
+        --accent-two-s: 85%;
+        --accent-two-l: 60%;
         --accent-two: hsl(var(--accent-two-h), var(--accent-two-s), var(--accent-two-l));
         
         //yellow
         --accent-three-h: 50;
-        --accent-three-s: 80%;
+        --accent-three-s: 90%;
         --accent-three-l: 65%;
         --accent-three: hsl(var(--accent-three-h), var(--accent-three-s), var(--accent-three-l));
 

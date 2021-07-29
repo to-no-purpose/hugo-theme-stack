@@ -191,12 +191,12 @@
             display: inline-flex;
             align-items: center;
             color: var(--color-txt-two);
-            font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+            font-variation-settings: "MONO" .51, "CASL" 0, "slnt" 0, "CRSV" 0;
             transition: all .2s;
                     &:hover {
                         font-weight: 600;
                         color: var(--color-txt-one);
-                        font-variation-settings: "MONO" 1, "CASL" 1, "slnt" 0, "CRSV" 0;
+                        font-variation-settings: "MONO" .51, "CASL" 1, "slnt" 0, "CRSV" 0;
                     }
 
         }
